@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2209B7972003122E00207548 /* AudioKitAudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2209B78D2003122E00207548 /* AudioKitAudioIO.framework */; };
+		2209B79C2003122E00207548 /* AudioKitAudioIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */; };
+		2209B79E2003122E00207548 /* AudioKitAudioIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209B7902003122E00207548 /* AudioKitAudioIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2209B7B1200317FB00207548 /* AudioKitRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* AudioKitRecorder.swift */; };
+		2209B7B2200317FB00207548 /* AudioKitRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* AudioKitRecorder.swift */; };
+		2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2209B7C32003223E00207548 /* AudioIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2209B7982003122E00207548 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2209B7842003122E00207548 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2209B78C2003122E00207548;
+			remoteInfo = AudioKitAudioIO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2209B78D2003122E00207548 /* AudioKitAudioIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioKitAudioIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2209B7902003122E00207548 /* AudioKitAudioIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioKitAudioIO.h; sourceTree = "<group>"; };
+		2209B7912003122E00207548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2209B7962003122E00207548 /* AudioKitAudioIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioKitAudioIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAudioIOTests.swift; sourceTree = "<group>"; };
+		2209B79D2003122E00207548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2209B7B0200317FB00207548 /* AudioKitRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitRecorder.swift; sourceTree = "<group>"; };
+		2209B7C32003223E00207548 /* AudioIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioIO.framework; path = ../Carthage/Build/iOS/AudioIO.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2209B7892003122E00207548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2209B7932003122E00207548 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2209B7972003122E00207548 /* AudioKitAudioIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2209B7832003122E00207548 = {
+			isa = PBXGroup;
+			children = (
+				2209B78F2003122E00207548 /* AudioKitAudioIO */,
+				2209B79A2003122E00207548 /* AudioKitAudioIOTests */,
+				2209B78E2003122E00207548 /* Products */,
+				2209B7B420031E9300207548 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2209B78E2003122E00207548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2209B78D2003122E00207548 /* AudioKitAudioIO.framework */,
+				2209B7962003122E00207548 /* AudioKitAudioIOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2209B78F2003122E00207548 /* AudioKitAudioIO */ = {
+			isa = PBXGroup;
+			children = (
+				2209B7902003122E00207548 /* AudioKitAudioIO.h */,
+				2209B7B0200317FB00207548 /* AudioKitRecorder.swift */,
+				2209B7912003122E00207548 /* Info.plist */,
+			);
+			path = AudioKitAudioIO;
+			sourceTree = "<group>";
+		};
+		2209B79A2003122E00207548 /* AudioKitAudioIOTests */ = {
+			isa = PBXGroup;
+			children = (
+				2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */,
+				2209B79D2003122E00207548 /* Info.plist */,
+			);
+			path = AudioKitAudioIOTests;
+			sourceTree = "<group>";
+		};
+		2209B7B420031E9300207548 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2209B7C32003223E00207548 /* AudioIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2209B78A2003122E00207548 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2209B79E2003122E00207548 /* AudioKitAudioIO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2209B78C2003122E00207548 /* AudioKitAudioIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2209B7A12003122E00207548 /* Build configuration list for PBXNativeTarget "AudioKitAudioIO" */;
+			buildPhases = (
+				2209B7882003122E00207548 /* Sources */,
+				2209B7892003122E00207548 /* Frameworks */,
+				2209B78A2003122E00207548 /* Headers */,
+				2209B78B2003122E00207548 /* Resources */,
+				2209B7B32003187800207548 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioKitAudioIO;
+			productName = AudioKitAudioIO;
+			productReference = 2209B78D2003122E00207548 /* AudioKitAudioIO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2209B7952003122E00207548 /* AudioKitAudioIOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2209B7A42003122E00207548 /* Build configuration list for PBXNativeTarget "AudioKitAudioIOTests" */;
+			buildPhases = (
+				2209B7922003122E00207548 /* Sources */,
+				2209B7932003122E00207548 /* Frameworks */,
+				2209B7942003122E00207548 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2209B7992003122E00207548 /* PBXTargetDependency */,
+			);
+			name = AudioKitAudioIOTests;
+			productName = AudioKitAudioIOTests;
+			productReference = 2209B7962003122E00207548 /* AudioKitAudioIOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2209B7842003122E00207548 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "meech-ward";
+				TargetAttributes = {
+					2209B78C2003122E00207548 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					2209B7952003122E00207548 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2209B7872003122E00207548 /* Build configuration list for PBXProject "AudioKitAudioIO" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2209B7832003122E00207548;
+			productRefGroup = 2209B78E2003122E00207548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2209B78C2003122E00207548 /* AudioKitAudioIO */,
+				2209B7952003122E00207548 /* AudioKitAudioIOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2209B78B2003122E00207548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2209B7942003122E00207548 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2209B7B32003187800207548 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AudioIO.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# /usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2209B7882003122E00207548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2209B7B1200317FB00207548 /* AudioKitRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2209B7922003122E00207548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2209B79C2003122E00207548 /* AudioKitAudioIOTests.swift in Sources */,
+				2209B7B2200317FB00207548 /* AudioKitRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2209B7992003122E00207548 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2209B78C2003122E00207548 /* AudioKitAudioIO */;
+			targetProxy = 2209B7982003122E00207548 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2209B79F2003122E00207548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2209B7A02003122E00207548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2209B7A22003122E00207548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7GT6EK8D4J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sam/Desktop,
+					"$(SRCROOT)/../Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.AudioKitAudioIO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2209B7A32003122E00207548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7GT6EK8D4J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Sam/Desktop,
+					"$(SRCROOT)/../Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.AudioKitAudioIO";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2209B7A52003122E00207548 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GT6EK8D4J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AudioKitAudioIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.AudioKitAudioIOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2209B7A62003122E00207548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GT6EK8D4J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AudioKitAudioIOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meech-ward.AudioKitAudioIOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2209B7872003122E00207548 /* Build configuration list for PBXProject "AudioKitAudioIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2209B79F2003122E00207548 /* Debug */,
+				2209B7A02003122E00207548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2209B7A12003122E00207548 /* Build configuration list for PBXNativeTarget "AudioKitAudioIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2209B7A22003122E00207548 /* Debug */,
+				2209B7A32003122E00207548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2209B7A42003122E00207548 /* Build configuration list for PBXNativeTarget "AudioKitAudioIOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2209B7A52003122E00207548 /* Debug */,
+				2209B7A62003122E00207548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2209B7842003122E00207548 /* Project object */;
+}
