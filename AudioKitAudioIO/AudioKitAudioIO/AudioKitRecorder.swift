@@ -11,15 +11,15 @@ import AudioIO
 
 public class AudioKitRecorder: AudioRecordable {
   
-  func start(closure: @escaping ((Bool) -> ())) {
+  public func start(closure: @escaping ((Bool) -> ())) {
     
   }
   
-  func stop(closure: @escaping ((Bool) -> ())) {
+  public func stop(closure: @escaping ((Bool) -> ())) {
     
   }
   
-  var currentTime: TimeInterval = 0.0
+  public var currentTime: TimeInterval = 0.0
   
   
 }
