@@ -1,1 +1,2 @@
-git "/Users/Sam/Library/Mobile Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/scripts/../../../Entities/AudioIO" "0.2.0"
+git "/Users/Sam/Library/Mobile Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/scripts/../../../Entities/AudioIO" "0.4.0"
+github "AudioKit/AudioKit" "61526a94c2c7f523234b08a633ac956808fabcda"
