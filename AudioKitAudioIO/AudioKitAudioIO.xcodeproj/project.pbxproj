@@ -10,9 +10,17 @@
 		2209B7972003122E00207548 /* AudioKitAudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2209B78D2003122E00207548 /* AudioKitAudioIO.framework */; };
 		2209B79C2003122E00207548 /* AudioKitAudioIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */; };
 		2209B79E2003122E00207548 /* AudioKitAudioIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209B7902003122E00207548 /* AudioKitAudioIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2209B7B1200317FB00207548 /* AudioKitRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* AudioKitRecorder.swift */; };
-		2209B7B2200317FB00207548 /* AudioKitRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* AudioKitRecorder.swift */; };
+		2209B7B1200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
+		2209B7B2200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
 		2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2209B7C32003223E00207548 /* AudioIO.framework */; };
+		227BFA15200914800031ED2B /* AudioKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 227BFA14200914800031ED2B /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		227BFA16200914870031ED2B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227BFA14200914800031ED2B /* AudioKit.framework */; };
+		227BFA1A200915370031ED2B /* AKToEZMicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA19200915370031ED2B /* AKToEZMicHelper.swift */; };
+		227BFA1C2009155E0031ED2B /* AudioKitAudioIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */; };
+		227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA1D2009158B0031ED2B /* Microphone.swift */; };
+		22EB2D262008F0380018B366 /* AudioIO.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2209B7C32003223E00207548 /* AudioIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */; };
+		22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +33,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		22EB2D252008F0330018B366 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				22EB2D262008F0380018B366 /* AudioIO.framework in CopyFiles */,
+				227BFA15200914800031ED2B /* AudioKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2209B78D2003122E00207548 /* AudioKitAudioIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioKitAudioIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2209B7902003122E00207548 /* AudioKitAudioIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioKitAudioIO.h; sourceTree = "<group>"; };
@@ -32,8 +54,14 @@
 		2209B7962003122E00207548 /* AudioKitAudioIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioKitAudioIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAudioIOTests.swift; sourceTree = "<group>"; };
 		2209B79D2003122E00207548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2209B7B0200317FB00207548 /* AudioKitRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitRecorder.swift; sourceTree = "<group>"; };
+		2209B7B0200317FB00207548 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		2209B7C32003223E00207548 /* AudioIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioIO.framework; path = ../Carthage/Build/iOS/AudioIO.framework; sourceTree = "<group>"; };
+		227BFA14200914800031ED2B /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../Carthage/Build/iOS/AudioKit.framework; sourceTree = "<group>"; };
+		227BFA19200915370031ED2B /* AKToEZMicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKToEZMicHelper.swift; sourceTree = "<group>"; };
+		227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAudioIO.swift; sourceTree = "<group>"; };
+		227BFA1D2009158B0031ED2B /* Microphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone.swift; sourceTree = "<group>"; };
+		22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyTracker.swift; sourceTree = "<group>"; };
+		22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeTracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */,
+				227BFA16200914870031ED2B /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +88,7 @@
 		2209B7832003122E00207548 = {
 			isa = PBXGroup;
 			children = (
+				227BFA14200914800031ED2B /* AudioKit.framework */,
 				2209B78F2003122E00207548 /* AudioKitAudioIO */,
 				2209B79A2003122E00207548 /* AudioKitAudioIOTests */,
 				2209B78E2003122E00207548 /* Products */,
@@ -79,7 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				2209B7902003122E00207548 /* AudioKitAudioIO.h */,
-				2209B7B0200317FB00207548 /* AudioKitRecorder.swift */,
+				2209B7B0200317FB00207548 /* Recorder.swift */,
+				227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */,
+				22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */,
+				227BFA1D2009158B0031ED2B /* Microphone.swift */,
+				22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */,
+				227BFA19200915370031ED2B /* AKToEZMicHelper.swift */,
 				2209B7912003122E00207548 /* Info.plist */,
 			);
 			path = AudioKitAudioIO;
@@ -125,6 +160,7 @@
 				2209B78A2003122E00207548 /* Headers */,
 				2209B78B2003122E00207548 /* Resources */,
 				2209B7B32003187800207548 /* ShellScript */,
+				22EB2D252008F0330018B366 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -231,7 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2209B7B1200317FB00207548 /* AudioKitRecorder.swift in Sources */,
+				2209B7B1200317FB00207548 /* Recorder.swift in Sources */,
+				227BFA1A200915370031ED2B /* AKToEZMicHelper.swift in Sources */,
+				22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */,
+				227BFA1C2009155E0031ED2B /* AudioKitAudioIO.swift in Sources */,
+				227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */,
+				22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2209B79C2003122E00207548 /* AudioKitAudioIOTests.swift in Sources */,
-				2209B7B2200317FB00207548 /* AudioKitRecorder.swift in Sources */,
+				2209B7B2200317FB00207548 /* Recorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +425,7 @@
 					/Users/Sam/Desktop,
 					"$(SRCROOT)/../Carthage/Build/iOS",
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -413,6 +455,7 @@
 					"$(inherited)",
 					/Users/Sam/Desktop,
 					"$(SRCROOT)/../Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
