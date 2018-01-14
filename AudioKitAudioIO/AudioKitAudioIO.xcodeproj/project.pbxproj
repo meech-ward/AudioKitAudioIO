@@ -12,15 +12,12 @@
 		2209B79E2003122E00207548 /* AudioKitAudioIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2209B7902003122E00207548 /* AudioKitAudioIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2209B7B1200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
 		2209B7B2200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
-		2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2209B7C32003223E00207548 /* AudioIO.framework */; };
-		227BFA15200914800031ED2B /* AudioKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 227BFA14200914800031ED2B /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		227BFA16200914870031ED2B /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227BFA14200914800031ED2B /* AudioKit.framework */; };
-		227BFA1A200915370031ED2B /* AKToEZMicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA19200915370031ED2B /* AKToEZMicHelper.swift */; };
-		227BFA1C2009155E0031ED2B /* AudioKitAudioIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */; };
 		227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA1D2009158B0031ED2B /* Microphone.swift */; };
-		22EB2D262008F0380018B366 /* AudioIO.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2209B7C32003223E00207548 /* AudioIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */; };
 		22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */; };
+		22F5B8DF2009A69A0010FA3C /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F5B8DE2009A69A0010FA3C /* AudioKit.framework */; };
+		22F5B8F32009A6BA0010FA3C /* AudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F5B8F22009A6A80010FA3C /* AudioIO.framework */; };
+		22F5B9032009A7730010FA3C /* AudioKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22F5B8DE2009A69A0010FA3C /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +28,34 @@
 			remoteGlobalIDString = 2209B78C2003122E00207548;
 			remoteInfo = AudioKitAudioIO;
 		};
+		22F5B8EB2009A6A80010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "AudioIO::AudioIOTests::Product";
+			remoteInfo = AudioIOTests;
+		};
+		22F5B8ED2009A6A80010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Focus::Focus::Product";
+			remoteInfo = Focus;
+		};
+		22F5B8EF2009A6A80010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "Observe::Observe::Product";
+			remoteInfo = Observe;
+		};
+		22F5B8F12009A6A80010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "AudioIO::AudioIO::Product";
+			remoteInfo = AudioIO;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,10 +63,9 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
-				22EB2D262008F0380018B366 /* AudioIO.framework in CopyFiles */,
-				227BFA15200914800031ED2B /* AudioKit.framework in CopyFiles */,
+				22F5B9032009A7730010FA3C /* AudioKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,13 +79,11 @@
 		2209B79B2003122E00207548 /* AudioKitAudioIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAudioIOTests.swift; sourceTree = "<group>"; };
 		2209B79D2003122E00207548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2209B7B0200317FB00207548 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
-		2209B7C32003223E00207548 /* AudioIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioIO.framework; path = ../Carthage/Build/iOS/AudioIO.framework; sourceTree = "<group>"; };
-		227BFA14200914800031ED2B /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = ../Carthage/Build/iOS/AudioKit.framework; sourceTree = "<group>"; };
-		227BFA19200915370031ED2B /* AKToEZMicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKToEZMicHelper.swift; sourceTree = "<group>"; };
-		227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioKitAudioIO.swift; sourceTree = "<group>"; };
 		227BFA1D2009158B0031ED2B /* Microphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone.swift; sourceTree = "<group>"; };
 		22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyTracker.swift; sourceTree = "<group>"; };
 		22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeTracker.swift; sourceTree = "<group>"; };
+		22F5B8DE2009A69A0010FA3C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
+		22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AudioIO.xcodeproj; path = ../../../Entities/AudioIO/AudioIO.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2209B7C42003223E00207548 /* AudioIO.framework in Frameworks */,
-				227BFA16200914870031ED2B /* AudioKit.framework in Frameworks */,
+				22F5B8DF2009A69A0010FA3C /* AudioKit.framework in Frameworks */,
+				22F5B8F32009A6BA0010FA3C /* AudioIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +110,8 @@
 		2209B7832003122E00207548 = {
 			isa = PBXGroup;
 			children = (
-				227BFA14200914800031ED2B /* AudioKit.framework */,
+				22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */,
+				22F5B8DE2009A69A0010FA3C /* AudioKit.framework */,
 				2209B78F2003122E00207548 /* AudioKitAudioIO */,
 				2209B79A2003122E00207548 /* AudioKitAudioIOTests */,
 				2209B78E2003122E00207548 /* Products */,
@@ -110,11 +133,9 @@
 			children = (
 				2209B7902003122E00207548 /* AudioKitAudioIO.h */,
 				2209B7B0200317FB00207548 /* Recorder.swift */,
-				227BFA1B2009155E0031ED2B /* AudioKitAudioIO.swift */,
 				22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */,
 				227BFA1D2009158B0031ED2B /* Microphone.swift */,
 				22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */,
-				227BFA19200915370031ED2B /* AKToEZMicHelper.swift */,
 				2209B7912003122E00207548 /* Info.plist */,
 			);
 			path = AudioKitAudioIO;
@@ -132,9 +153,19 @@
 		2209B7B420031E9300207548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2209B7C32003223E00207548 /* AudioIO.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22F5B8E12009A6A80010FA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22F5B8EC2009A6A80010FA3C /* AudioIOTests.xctest */,
+				22F5B8EE2009A6A80010FA3C /* Focus.framework */,
+				22F5B8F02009A6A80010FA3C /* Observe.framework */,
+				22F5B8F22009A6A80010FA3C /* AudioIO.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +251,12 @@
 			mainGroup = 2209B7832003122E00207548;
 			productRefGroup = 2209B78E2003122E00207548 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22F5B8E12009A6A80010FA3C /* Products */;
+					ProjectRef = 22F5B8E02009A6A80010FA3C /* AudioIO.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2209B78C2003122E00207548 /* AudioKitAudioIO */,
@@ -227,6 +264,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		22F5B8EC2009A6A80010FA3C /* AudioIOTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = AudioIOTests.xctest;
+			remoteRef = 22F5B8EB2009A6A80010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22F5B8EE2009A6A80010FA3C /* Focus.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Focus.framework;
+			remoteRef = 22F5B8ED2009A6A80010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22F5B8F02009A6A80010FA3C /* Observe.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Observe.framework;
+			remoteRef = 22F5B8EF2009A6A80010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22F5B8F22009A6A80010FA3C /* AudioIO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioIO.framework;
+			remoteRef = 22F5B8F12009A6A80010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2209B78B2003122E00207548 /* Resources */ = {
@@ -268,9 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2209B7B1200317FB00207548 /* Recorder.swift in Sources */,
-				227BFA1A200915370031ED2B /* AKToEZMicHelper.swift in Sources */,
 				22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */,
-				227BFA1C2009155E0031ED2B /* AudioKitAudioIO.swift in Sources */,
 				227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */,
 				22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */,
 			);
@@ -423,9 +489,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Sam/Desktop,
-					"$(SRCROOT)/../Carthage/Build/iOS",
-					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
-					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -454,9 +518,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Sam/Desktop,
-					"$(SRCROOT)/../Carthage/Build/iOS",
-					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
-					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/Sam/RecordPiano/UseCases/AudioKitAudioIO/Carthage/Build/iOS",
+					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

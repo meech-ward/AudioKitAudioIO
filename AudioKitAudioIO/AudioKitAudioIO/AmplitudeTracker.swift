@@ -10,36 +10,36 @@ import Foundation
 import AudioIO
 import AudioKit
 
-class AmplitudeTracker {
+public class AmplitudeTracker {
   
   let akMicTracker:AKMicrophoneTracker
   
-  init() {
+  public init() {
     akMicTracker = AKMicrophoneTracker()
   }
   
 }
 
 extension AmplitudeTracker: StartAndStopable {
-  func start() {
+  public func start() {
     akMicTracker.start()
   }
   
-  func stop() {
+  public func stop() {
     akMicTracker.stop()
   }
 }
 
 extension AmplitudeTracker: AudioAmplitudeTracker {
-  var amplitude: Double? {
+  public var amplitude: Double? {
     return akMicTracker.amplitude
   }
   
-  var rightAmplitude: Double? {
+  public var rightAmplitude: Double? {
     return nil
   }
   
-  var leftAmplitude: Double? {
+  public var leftAmplitude: Double? {
     return nil
   }
 }
