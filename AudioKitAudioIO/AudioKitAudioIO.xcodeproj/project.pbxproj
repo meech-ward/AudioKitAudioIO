@@ -488,8 +488,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Sam/Desktop,
-					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS",
+					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS/**",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -517,8 +516,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Sam/Desktop,
-					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS",
+					"$(SRCROOT)/../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS/**",
 				);
 				INFOPLIST_FILE = AudioKitAudioIO/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
