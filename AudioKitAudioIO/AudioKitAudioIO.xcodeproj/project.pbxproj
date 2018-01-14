@@ -13,6 +13,8 @@
 		2209B7B1200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
 		2209B7B2200317FB00207548 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209B7B0200317FB00207548 /* Recorder.swift */; };
 		227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BFA1D2009158B0031ED2B /* Microphone.swift */; };
+		22A22BF8200BB1540035490B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22BF7200BB1540035490B /* Player.swift */; };
+		22A22C0B200BF29D0035490B /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A22C0A200BF29D0035490B /* Engine.swift */; };
 		22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */; };
 		22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */; };
 		22F5B8DF2009A69A0010FA3C /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F5B8DE2009A69A0010FA3C /* AudioKit.framework */; };
@@ -80,6 +82,8 @@
 		2209B79D2003122E00207548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2209B7B0200317FB00207548 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		227BFA1D2009158B0031ED2B /* Microphone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Microphone.swift; sourceTree = "<group>"; };
+		22A22BF7200BB1540035490B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../../Example/Example/Player.swift; sourceTree = "<group>"; };
+		22A22C0A200BF29D0035490B /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
 		22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyTracker.swift; sourceTree = "<group>"; };
 		22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeTracker.swift; sourceTree = "<group>"; };
 		22F5B8DE2009A69A0010FA3C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../../../ThirdParty/AudioKit-Develop/Frameworks/AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
@@ -133,9 +137,11 @@
 			children = (
 				2209B7902003122E00207548 /* AudioKitAudioIO.h */,
 				2209B7B0200317FB00207548 /* Recorder.swift */,
+				22A22BF7200BB1540035490B /* Player.swift */,
 				22EB2DC12008F31D0018B366 /* AmplitudeTracker.swift */,
 				227BFA1D2009158B0031ED2B /* Microphone.swift */,
 				22EB2DBF2008F2EA0018B366 /* FrequencyTracker.swift */,
+				22A22C0A200BF29D0035490B /* Engine.swift */,
 				2209B7912003122E00207548 /* Info.plist */,
 			);
 			path = AudioKitAudioIO;
@@ -338,6 +344,8 @@
 				2209B7B1200317FB00207548 /* Recorder.swift in Sources */,
 				22EB2DC02008F2EA0018B366 /* FrequencyTracker.swift in Sources */,
 				227BFA1E2009158B0031ED2B /* Microphone.swift in Sources */,
+				22A22BF8200BB1540035490B /* Player.swift in Sources */,
+				22A22C0B200BF29D0035490B /* Engine.swift in Sources */,
 				22EB2DC22008F31D0018B366 /* AmplitudeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
