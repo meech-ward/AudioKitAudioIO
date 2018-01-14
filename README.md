@@ -1,29 +1,9 @@
 # AudioKitAudioIO
 
-[![CI Status](http://img.shields.io/travis/meech-ward/AudioKitAudioIO.svg?style=flat)](https://travis-ci.org/meech-ward/AudioKitAudioIO)
-[![Version](https://img.shields.io/cocoapods/v/AudioKitAudioIO.svg?style=flat)](http://cocoapods.org/pods/AudioKitAudioIO)
-[![License](https://img.shields.io/cocoapods/l/AudioKitAudioIO.svg?style=flat)](http://cocoapods.org/pods/AudioKitAudioIO)
-[![Platform](https://img.shields.io/cocoapods/p/AudioKitAudioIO.svg?style=flat)](http://cocoapods.org/pods/AudioKitAudioIO)
+Uses objects from the [AudioKit](https://github.com/AudioKit/AudioKit) framework to conform to the [AudioIO](https://github.com/meech-ward/AudioIO) protocols.
 
-## Example
+Check the example project for more details.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## AudioKit
 
-## Requirements
-
-## Installation
-
-AudioKitAudioIO is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'AudioKitAudioIO'
-```
-
-## Author
-
-meech-ward, sam@meech-ward.com
-
-## License
-
-AudioKitAudioIO is available under the MIT license. See the LICENSE file for more info.
+The [AudioKit](https://github.com/AudioKit/AudioKit) framework needs to be included in the framework for it to run. This can be added by cloning the AudioKit repo and building the framework locally, or you can use carthage. 
