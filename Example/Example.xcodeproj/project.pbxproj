@@ -14,6 +14,8 @@
 		22EB2D3E2008F10A0018B366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2D3C2008F10A0018B366 /* LaunchScreen.storyboard */; };
 		22EB2D492008F10A0018B366 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2D482008F10A0018B366 /* ExampleTests.swift */; };
 		22EB2D542008F10B0018B366 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2D532008F10B0018B366 /* ExampleUITests.swift */; };
+		22F5B8FE2009A7360010FA3C /* AudioKitAudioIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F5B8FB2009A7290010FA3C /* AudioKitAudioIO.framework */; };
+		22F5B8FF2009A7360010FA3C /* AudioKitAudioIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22F5B8FB2009A7290010FA3C /* AudioKitAudioIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,42 @@
 			remoteGlobalIDString = 22EB2D2F2008F10A0018B366;
 			remoteInfo = Example;
 		};
+		22F5B8FA2009A7290010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2209B78D2003122E00207548;
+			remoteInfo = AudioKitAudioIO;
+		};
+		22F5B8FC2009A7290010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2209B7962003122E00207548;
+			remoteInfo = AudioKitAudioIOTests;
+		};
+		22F5B9002009A7360010FA3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2209B78C2003122E00207548;
+			remoteInfo = AudioKitAudioIO;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22F5B9022009A7360010FA3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22F5B8FF2009A7360010FA3C /* AudioKitAudioIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22EB2D302008F10A0018B366 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +84,7 @@
 		22EB2D4F2008F10B0018B366 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EB2D532008F10B0018B366 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		22EB2D552008F10B0018B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AudioKitAudioIO.xcodeproj; path = ../AudioKitAudioIO/AudioKitAudioIO.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F5B8FE2009A7360010FA3C /* AudioKitAudioIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +116,7 @@
 		22EB2D272008F10A0018B366 = {
 			isa = PBXGroup;
 			children = (
+				22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */,
 				22EB2D322008F10A0018B366 /* Example */,
 				22EB2D472008F10A0018B366 /* ExampleTests */,
 				22EB2D522008F10B0018B366 /* ExampleUITests */,
@@ -125,6 +165,15 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		22F5B8F52009A7290010FA3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22F5B8FB2009A7290010FA3C /* AudioKitAudioIO.framework */,
+				22F5B8FD2009A7290010FA3C /* AudioKitAudioIOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +184,12 @@
 				22EB2D2C2008F10A0018B366 /* Sources */,
 				22EB2D2D2008F10A0018B366 /* Frameworks */,
 				22EB2D2E2008F10A0018B366 /* Resources */,
+				22F5B9022009A7360010FA3C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22F5B9012009A7360010FA3C /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -218,6 +269,12 @@
 			mainGroup = 22EB2D272008F10A0018B366;
 			productRefGroup = 22EB2D312008F10A0018B366 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22F5B8F52009A7290010FA3C /* Products */;
+					ProjectRef = 22F5B8F42009A7290010FA3C /* AudioKitAudioIO.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22EB2D2F2008F10A0018B366 /* Example */,
@@ -226,6 +283,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		22F5B8FB2009A7290010FA3C /* AudioKitAudioIO.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKitAudioIO.framework;
+			remoteRef = 22F5B8FA2009A7290010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22F5B8FD2009A7290010FA3C /* AudioKitAudioIOTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AudioKitAudioIOTests.xctest;
+			remoteRef = 22F5B8FC2009A7290010FA3C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22EB2D2E2008F10A0018B366 /* Resources */ = {
@@ -292,6 +366,11 @@
 			isa = PBXTargetDependency;
 			target = 22EB2D2F2008F10A0018B366 /* Example */;
 			targetProxy = 22EB2D502008F10B0018B366 /* PBXContainerItemProxy */;
+		};
+		22F5B9012009A7360010FA3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKitAudioIO;
+			targetProxy = 22F5B9002009A7360010FA3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,6 +504,7 @@
 		22EB2D592008F10B0018B366 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GT6EK8D4J;
@@ -440,6 +520,7 @@
 		22EB2D5A2008F10B0018B366 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GT6EK8D4J;
