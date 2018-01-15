@@ -22,8 +22,7 @@ class ViewController: UIViewController {
     
     audioInput = AudioIO.AudioInput(microphone: AudioKitAudioIO.Microphone(), bufferClosure: bufferUpdated, amplitudeTracker: AudioKitAudioIO.AmplitudeTracker())
 //    audioInput.start()
-//    AudioKitAudioIO.Engine.start()
-    
+
     let audioPlayable1 = AudioKitAudioIO.Player(fileName: "mario_its_me.wav")
     let audioPlayable2 = AudioKitAudioIO.Player(fileName: "warning-to-evacuate.wav")
     audioPlayer1 = AudioIO.AudioPlayer(playable: audioPlayable1)
@@ -44,16 +43,15 @@ class ViewController: UIViewController {
   }
 
   @IBAction func playAudio(_ sender: Any) {
-    print("Player 1 audio time: \(audioPlayer1.currentTime), duration: \(audioPlayer1.duration)")
-    if audioPlayer1.isPlaying {
-      audioPlayer1.stop { successful in
-        print("stopping successful: \(successful)")
+    var count = 0
+    audioPlayer1.restart { successful in
+      count += 1
+      if count == 1 {
+        print("stop successful: \(successful)")
+      } else if count == 2 {
+        print("start successful: \(successful)")
       }
     }
-    audioPlayer1.play { successful in
-      print("playing successful: \(successful)")
-    }
-    print("Player 1 audio time: \(audioPlayer1.currentTime), duration: \(audioPlayer1.duration)")
   }
   
   @IBAction func playAudio2(_ sender: Any) {
