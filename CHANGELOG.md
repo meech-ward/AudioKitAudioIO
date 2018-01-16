@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+## [0.2.0] - 2018-01-16
+### Added
+- `PitchShifter`
+  - Uses an `AKPitchShifter` to shift the pitch of audio
+- `PlayerSection`
+  - Manages the start and end time of audio
+- `PlayerDelegate`
+  - Notifies that the player is about to start playing
+  - This is used to set AudioKit's output right before playing
+
+### Changed
+
 ## [0.1.0] - 2018-01-14
 ### Added
 - `Microphone` object
