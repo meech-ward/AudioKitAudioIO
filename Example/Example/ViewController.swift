@@ -25,8 +25,12 @@ class ViewController: UIViewController {
 
     let audioPlayable1 = AudioKitAudioIO.Player(fileName: "mario_its_me.wav")
     let audioPlayable2 = AudioKitAudioIO.Player(fileName: "warning-to-evacuate.wav")
-    audioPlayer1 = AudioIO.AudioPlayer(playable: audioPlayable1)
-    audioPlayer2 = AudioIO.AudioPlayer(playable: audioPlayable2)
+    
+    let audioSection = PlayerSection(startTime: 0.5, endTime: 1.0)
+    audioPlayer1 = AudioIO.AudioPlayer(playable: audioPlayable1, audioSection: audioSection)
+    
+    let pitchShifter = PitchShifter(player: audioPlayable2, pitch: 10.0)
+    audioPlayer2 = AudioIO.AudioPlayer(playable: audioPlayable2, pitchShifter: pitchShifter)
     audioPlayer1.prepare()
     audioPlayer2.prepare()
   }

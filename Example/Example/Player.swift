@@ -10,9 +10,22 @@ import Foundation
 import AudioIO
 import AudioKit
 
-public class Player {
-  private var file: AKAudioFile!
-  private var player: AKPlayer!
+internal protocol PlayerDelegate {
+  func playerWillStartPlaying(_ player: Player)
+}
+
+extension PlayerDelegate {
+  func playerWillStartPlaying(_ player: Player) {
+    AudioKit.output = player.player
+    Engine.start()
+  }
+}
+
+public class Player: PlayerDelegate {
+  internal var file: AKAudioFile!
+  internal var player: AKPlayer!
+  
+  internal var delegate: PlayerDelegate!
   
   public init(fileName: String) {
     self.file = newAKAudioFile(fileName: fileName)
@@ -20,7 +33,7 @@ public class Player {
       return
     }
     player = AKPlayer(audioFile: file)
-    
+    self.delegate = self
   }
   
   private func newAKAudioFile(fileName: String) -> AKAudioFile? {
@@ -35,6 +48,16 @@ public class Player {
 }
 
 extension Player: AudioIO.AudioPlayable {
+  public func play(startTime: TimeInterval, endTime: TimeInterval, closure: @escaping ((Bool) -> ())) {
+    self.delegate.playerWillStartPlaying(self)
+    player.play(from: startTime, to: endTime)
+    closure(true)
+  }
+  
+  public func prepare(startTime: TimeInterval, endTime: TimeInterval) {
+    player.preroll(from: startTime, to: endTime)
+  }
+  
   public func prepare() {
     player.prepare()
   }
@@ -44,8 +67,7 @@ extension Player: AudioIO.AudioPlayable {
   }
   
   public func play(closure: @escaping ((Bool) -> ()) = {_ in}) {
-    AudioKit.output = player
-    Engine.start()
+    self.delegate.playerWillStartPlaying(self)
     player.play()
     closure(true)
   }
