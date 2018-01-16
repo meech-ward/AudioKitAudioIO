@@ -39,14 +39,13 @@ public class Microphone: MicrophoneType, StartAndStopable {
   
   public func start() {
     AudioKit.output = silence
-    AudioKit.start()
+    Engine.start()
     node?.avAudioNode.removeTap(onBus: 0)
     setupNode(mic)
   }
   
   public func stop() {
     node?.avAudioNode.removeTap(onBus: 0)
-    AudioKit.stop()
   }
 }
 

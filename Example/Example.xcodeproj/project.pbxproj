@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A22BFD200BB2BB0035490B /* mario_its_me.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22A22BFB200BB2BB0035490B /* mario_its_me.wav */; };
+		22A22C09200BF2150035490B /* warning-to-evacuate.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22A22C08200BF2150035490B /* warning-to-evacuate.wav */; };
 		22EB2D342008F10A0018B366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2D332008F10A0018B366 /* AppDelegate.swift */; };
 		22EB2D362008F10A0018B366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB2D352008F10A0018B366 /* ViewController.swift */; };
 		22EB2D392008F10A0018B366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EB2D372008F10A0018B366 /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22A22BFB200BB2BB0035490B /* mario_its_me.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mario_its_me.wav; sourceTree = "<group>"; };
+		22A22C08200BF2150035490B /* warning-to-evacuate.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "warning-to-evacuate.wav"; sourceTree = "<group>"; };
 		22EB2D302008F10A0018B366 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EB2D332008F10A0018B366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22EB2D352008F10A0018B366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 		22EB2D322008F10A0018B366 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				22A22C08200BF2150035490B /* warning-to-evacuate.wav */,
+				22A22BFB200BB2BB0035490B /* mario_its_me.wav */,
 				22EB2D332008F10A0018B366 /* AppDelegate.swift */,
 				22EB2D352008F10A0018B366 /* ViewController.swift */,
 				22EB2D372008F10A0018B366 /* Main.storyboard */,
@@ -306,7 +312,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A22BFD200BB2BB0035490B /* mario_its_me.wav in Resources */,
 				22EB2D3E2008F10A0018B366 /* LaunchScreen.storyboard in Resources */,
+				22A22C09200BF2150035490B /* warning-to-evacuate.wav in Resources */,
 				22EB2D3B2008F10A0018B366 /* Assets.xcassets in Resources */,
 				22EB2D392008F10A0018B366 /* Main.storyboard in Resources */,
 			);
